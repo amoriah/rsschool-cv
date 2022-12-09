@@ -11,7 +11,7 @@ I'm studying to become a developer and I'm only at the beginning of my journey.<
 Now I'm taking a course in ***rs-school*** (GIT, HTML, CSS, JavaScript, Browser API, NodeJS, Algorithms).<br/>
 Also I'm studying in ***School 21*** in Kazan.<br/>
 
-### My skills:
+### My skills: 
 * C
 * C++
 * SHELL
