@@ -28,14 +28,11 @@ Also I'm studying in ***School 21*** in Kazan.<br/>
 
 ### Code examples from _Codewars_:
 ```
-function alphabetPosition(text)
-{
+function alphabetPosition(text) {
   text = text.toLowerCase();
   let new_str;
-  for (let char of text)
-  {
-    if (char >= 'a' && char <= 'z')
-    {
+  for (let char of text) {
+    if (char >= 'a' && char <= 'z') {
       let nb = char.charCodeAt(0) - 96;
       if (!new_str)
         new_str = nb;
