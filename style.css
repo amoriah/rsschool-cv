@@ -16,12 +16,18 @@ https://webaim.org/resources/contrastchecker/ - сервис для провер
 */
 
 :root {
-	--blue-color: rgb(66, 177, 199);
-	--blue2-color: rgba(155, 234, 249, 0.633);
+	--blue-color: rgb(167, 214, 223);
+	--blue2-color: rgba(129, 178, 188, 0.633);
 	--yellow-color: rgb(240, 245, 98);
 	--pink-color: rgb(219, 18, 230);
 	--black-color: rgb(0, 0, 0);
-	--white-color: rgb(255, 255, 255);
+	--back-color: rgb(122, 56, 100);
+	--white-color:  rgb(231, 227, 230);
+	--header-back: rgba(6, 7, 7, 0.58);
+	--main-back: rgba(230, 225, 229, 0.977);
+	--aside-back: rgba(249, 246, 248, 0.977);
+	--footer-back: rgba(28, 28, 28, 0.857);
+	--text-color: rgb(29, 30, 30);
 }
 
 html {
@@ -32,12 +38,11 @@ html {
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", sans-serif;
-	/* font-size: 24px; */
-	color: var(--black-color);
 }
 
 body {
-	background-color: var(--white-color);
+	background-image: url(/assets/img/background.jpeg);
+	background-size: 100%;
 }
 
 .container {
@@ -45,21 +50,21 @@ body {
 	flex-direction: column;
 	margin: auto;
 	width: 900px;
-	/* border: 3px solid red; */
-	
 }
 
 /* HEADER */
 
 header {
-	background-color: var(--white-color);
+	color: var(--white-color);
+	background-color: var(--header-back);
+	margin: 10px;
 }
 
 .header-container {
-	/* border: 3px solid red; */
 	padding: 1em;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	justify-content: space-around;
 }
 
@@ -79,7 +84,7 @@ header {
 }
 
 .my-photo {
-	
+	width: 120px;
 }
 
 /* MAIN */
@@ -87,54 +92,56 @@ header {
 main {
 	display: flex;
 	padding: 1em;
-	background-color: var(--blue2-color);
+	background-color: var(--main-back);
 }
 
 .main-container {
-	/* border: 3px solid red; */
 	flex-grow: 1;
 	border-radius: 6px;	
 }
 
 .section {
-	/* border: 1px solid red; */
-	
+	line-height: 30px;
+	background-color: var(--aside-back);
+	border-radius: 6px;
+	margin: 10px;
 }
+
 
 .section-title {
-	color: var(--pink-color);
-	border-bottom: thick double var(--black-color);;
-	font-size: 18px;	
+	color: var(--text-color);
+	text-transform: uppercase;
+	font-size: 18px;
+
 }
 
-.setion-item {
+.section-item {
 	text-decoration: none;
 	padding-left: 15px;
-	
+	color: var(--text-color);
 }
 
 .section-link {
 	text-decoration: none;
-	
-	
+	color: var(--text-color);
 }
 
 /* ASIDE */
 
 aside {
 	padding: 1em;
-	background-color: var(--blue2-color);
+	background-color: var(--aside-back);
+	border-radius: 6px;	
 }
 .aside-container {
-	/* border: 3px solid red; */
-	border-radius: 6px;	
 	
 }
 
 /* FOOTER */
 
 footer {
-	background-color: var(--yellow-color);
+	background-color: var(--footer-back);
+	color: var(--white-color);
 	padding: 1em;
 }
 
@@ -142,7 +149,6 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/* border: 3px solid red; */
 	border-radius: 6px;	
 	
 }
