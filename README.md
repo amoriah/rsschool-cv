@@ -1,4 +1,4 @@
 # rsschool-cv
 
-[Yana Onoyko](https://amoriah.github.io/rsschool-cv/cv)
-[Yana Onoyko](https://amoriah.github.io/rsschool-cv/)
+My [Markdown CV](https://amoriah.github.io/rsschool-cv/cv)
+My [HTML CV](https://amoriah.github.io/rsschool-cv/)
