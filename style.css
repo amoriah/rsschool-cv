@@ -1,0 +1,174 @@
+:root {
+	--white-color:  rgb(231, 227, 230);
+	--header-back: rgba(6, 7, 7, 0.58);
+	--main-back: rgba(230, 225, 229);
+	--aside-back: rgba(249, 246, 248);
+	--footer-back: rgba(28, 28, 28, 0.857);
+	--text-color: rgb(28, 30, 30);
+	--text-color2: rgb(97, 81, 110);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-image: url(./assets/img/background.jpeg);
+	background-size: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1000px;
+	margin: auto;
+}
+
+.container {
+	max-width: 1440px;
+    margin: 0 auto;
+}
+/* HEADER */
+header {
+	margin: 0 0 10px 0;
+	border-radius: 3px;
+	color: var(--white-color);
+	background-color: var(--header-back);
+}
+
+.header-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-grow: 2;
+}
+
+.my-name {
+	line-height: 45px;
+	font-size: 18px;
+}
+
+.my-name h1 {
+	letter-spacing: 10px;	
+}
+
+.my-name h3 {
+	letter-spacing: 6px;	
+}
+
+.my-photo {
+	padding-top: 10px;
+	width: 180px;	
+}
+
+/* MAIN */
+main {
+	padding: 15px;
+	display: flex;
+	align-items: stretch;
+	flex-grow: 1;
+	background-color: var(--main-back);
+	border-radius: 3px;
+}
+
+.main-container {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.section {
+	line-height: 30px;
+	background-color: var(--aside-back);
+	border-radius: 6px;
+	padding: 10px;
+	box-shadow: 5px 5px 4px 3px rgba(0, 0, 255, .2);
+}
+
+.section img {
+	width: 300px;
+}
+
+.section-title {
+	color: var(--text-color);
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 50px;
+	letter-spacing: 2px;
+}
+
+.section-item {
+	list-style: none;
+	line-height: 50px;
+	color: var(--text-color2);
+}
+
+.section-link {
+	line-height: 50px;
+	text-decoration: none;
+	color: var(--text-color2);
+	cursor: pointer;
+	transition: .1s;
+}
+
+.section-link:hover {
+	padding: 2px;
+}
+
+.section p {
+	line-height: 50px;
+	color: var(--text-color2);
+}
+
+/* ASIDE */
+aside {
+	padding: 15px;
+	background-color: var(--aside-back);
+	border-radius: 6px;
+	margin-left: 20px;
+	width: 250px;
+	box-shadow: 5px 5px 4px 3px rgba(0, 0, 255, .2);
+}
+
+.aside-container {
+	display: flex;
+	flex-direction: column;
+}
+.aside-container .section{
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+}
+
+/* FOOTER */
+footer {
+	padding: 15px;
+	background-color: var(--footer-back);
+	color: var(--white-color);
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 6px;		
+	font-size: 20px;
+}
+	
+.github {
+	text-decoration: none;
+	color: var(--white-color);
+}
+
+.rsschool img {
+	width: 120px;
+}
