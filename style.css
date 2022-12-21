@@ -21,7 +21,8 @@ html {
 
 body {
 	background-image: url(./assets/img/background.jpeg);
-	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -82,7 +83,7 @@ main {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 .section {
@@ -91,6 +92,10 @@ main {
 	border-radius: 6px;
 	padding: 10px;
 	box-shadow: 5px 5px 4px 3px rgba(0, 0, 255, .2);
+}
+/* соседний селектор */
+.section + .section {
+	margin-top: 15px;
 }
 
 .section img {
